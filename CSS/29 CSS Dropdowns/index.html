@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Dropdown</title>
+</head>
+<body>
+    <h1>CSS Dropdown</h1>
+    <hr/>
+    <h3>Basic Dropdown</h3>
+    <div class="simpleDropdown">
+        <span>Hover</span>
+        <div class="simpleDropdownContent">
+            <p>This is a simple dropdown.</p>
+        </div>
+    </div>
+    <p>This works by having any element to open the dropdown, in this case being <i><b>span</b></i> being held in a div. This will also contain another div where the content will be held.</p>
+    <p>The parent div has a <b>position</b> of <b><i>relative</i></b>, so the dropdown content can be placed absolutely when it's visible. By default this content's <b>display</b> is set to none, and only when the parent element is hovered, will the content div have the display set to <b>block</b> where the content can be shown.</p>
+    <hr/>
+    <h3>Dropdown Menu</h3>
+    <p>A dropdown menu can be useful for things such as navigation where a group of items can be shown together. This example is like the previous, but this one contains links.</p>
+    <div class="dropdownMenu">
+        <button class="dropdownMenuButton">Menu</button>
+        <div class="dropdownMenuContent">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Shop</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+    <p>This example works in a similar way to how the first worked, this time the hover item in question is a button, and the content contains some links, rather than a paragraph element.</p>
+    <hr/>
+    <h3>Right-Aligned Dropdown Content</h3>
+    <p>This example is the same as the previous, just the containing div has been set to float right.</p>
+    <div class="dropdownMenuRight">
+        <button class="dropdownMenuButton">Menu</button>
+        <div class="dropdownMenuContentRight">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Shop</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+</body>
+</html>

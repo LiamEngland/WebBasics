@@ -1,0 +1,107 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+/* Simple Dropdown */
+
+.simpleDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.simpleDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #555555;
+    color: #ffffff;
+
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.simpleDropdown:hover .simpleDropdownContent {
+    display: block;
+}
+
+/* Dropdown Menu */
+
+.dropdownMenuButton {
+    background-color: #6666ff;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenuContent {
+    display: none;
+    position: absolute;
+    background-color: #ccccff;
+    min-width: 160px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.dropdownMenuContent a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownMenuContent a:hover {background-color: #9999ff}
+
+.dropdownMenu:hover .dropdownMenuContent {display: block;}
+
+.dropdownMenu:hover .dropdownMenuButton {
+    background-color: #4444ff;
+}
+
+/* Right aligned dropdown menu */
+
+.dropdownMenuRight {
+    position: relative;
+    float: right;
+}
+
+.dropdownMenuContentRight {
+    display: none;
+    position: absolute;
+    background-color: #ccccff;
+    min-width: 160px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdownMenuContentRight a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownMenuContentRight a:hover {background-color: #9999ff}
+
+.dropdownMenuRight:hover .dropdownMenuContentRight {display: block;}
+
+.dropdownMenuRight:hover .dropdownMenuButton {
+    background-color: #4444ff;
+}
