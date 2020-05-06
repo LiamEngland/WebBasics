@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Image Sprites</title>
+</head>
+<body>
+    <h1>CSS Image Sprites</h1>
+    <hr>
+    <p>An image sprite is a collection of images put into a single image.</p>
+    <p>Web pages with many images can take a long time to load and generates multiple server requests.</p>
+    <p>Using image sprites will reduce the number of server requests and save bandwidth.</p>
+    <hr/>
+
+    <h3>Simple Example:</h3>
+    <p>Rather than using three separate images, a single image can be used.</p>
+    <img src='img_navsprites.gif' alt='Image Sprite' title='Image Sprite'>
+    <p>With CSS, only a part of the image is needed to be shown.</p>
+    <img id='iconHome'>
+    <img id='iconRight'>
+    <p>This is done by setting either an ID or a Class with a width, height and background, set to the image in question. The background is the important part, as it allows a background image to be defined, and the position of which part of the image you want showing.</p>
+    <hr/>
+
+    <h3>Image Sprite Navigation List:</h3>
+    <p>By using the same image, a navigation list can be created.</p>
+    <p>By setting a new image, this has darkened icons, which can be used for hover effects. So rather than loading 6 individual images, there's just one, which speeds up the process.</p>
+    <img src='img_navsprites_hover.gif' alt='Navigation hover'>
+    <ul id='navigation'>
+        <li id='home'><a href='#'></a></li>
+        <li id='prev'><a href='#'></a></li>
+        <li id='next'><a href='#'></a></li>
+    </ul>
+</body>
+</html>

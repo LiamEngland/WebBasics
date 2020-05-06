@@ -1,0 +1,71 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+#iconHome {
+    width: 46px;
+    height: 46px;
+    background: url(img_navsprites.gif) 0 0;
+}
+
+#iconRight {
+    width: 45px;
+    height: 46px;
+    background: url(img_navsprites.gif) -90px 0;
+}
+
+#navigation {
+    position: relative;
+}
+
+#navigation li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navigation li, #navigation a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 0px;
+    width: 46px;
+    background: url(img_navsprites.gif) 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url(img_navsprites.gif) -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url(img_navsprites.gif) -91px 0;
+}
+
+#home a:hover {
+    background: url(img_navsprites_hover.gif) 0 -45px;
+}
+
+#prev a:hover {
+    background: url(img_navsprites_hover.gif) -47px -45px;
+}
+
+#next a:hover {
+    background: url(img_navsprites_hover.gif) -91px -45px;
+}
