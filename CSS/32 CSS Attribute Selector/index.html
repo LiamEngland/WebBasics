@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>CSS Attribute Selectors</title>
+</head>
+<body>
+    <h1>CSS Attribute Selectors</h1>
+    <p>It's possible to style HTML elements that have specific attributes or attribute values.</p>
+    <hr/>
+    <h3>CSS [attribute] Selector:</h3>
+    <p>The [attribute] selector is used to select elements with a specific attribute.</p>
+    <p>Below's an example which will select all Anchor tags with a target attribute.</p>
+    <a href="#" target="#">I am a link with a target attribute</a>
+    <a href="#">I am a link!</a>
+    <hr/>
+    <h3>CSS [attribute='value'] Selector:</h3>
+    <p>The [attribute='value'] selector is used to elements with a specified attribute and value.</p>
+    <p>Below's an example that selects all elements with a target='blank' attribute.</p>
+    <a href="#" target="_blank">I am another link with a target attribute</a>
+    <a href="#">I am just a link!</a>
+    <hr/>
+    <h3>CSS [attribute~='value'] Selector:</h3>
+    <p>The [attribute~='value'] selectr is used to select elements with an attribute value containing a specific word.</p>
+    <p>Below's an example that selects all elements with a title values that contain the word "testing".</p>
+    <div title='testing'>
+    <p>Title: "testing"</p>
+    </div>
+    <div title='test'>
+    <p>Title: "test"</p>
+    </div>
+    <div title='testing selectors'>
+    <p>Title: "testing selectors"</p>
+    </div>
+    </body>
+    <hr/>
+    <h3>CSS [attribute|='value'] Selector:</h3>
+    <p>The [attribute|='value'] selector is used to select elements with a specified attribute starting with the specified value.</p>
+    <p>Below's example selects all elements with a class attribute value that begins with 'top'.</p>
+    <p>One thing to note is the value has to be a whole word, whether that be alone, or followed by a hyphen.</p>
+    <p class='top-class'>I have "top" in my class.</p>
+    <p>I don't.</p>
+    <hr/>
+    <h3>CSS [attribute^='value'] Selector:</h3>
+    <p>The [attribute^='value'] selector is used to select elements with values starting with the value specified. Using this method the value in question doesn't need to be the whole word.</p>
+    <p>The below's an example of which selects all attribute values starting with "top".</p>
+    <p class='toppings'>I have a class starting with 'top'.</p>
+    <p class='bottom-top'>I have a class that contains 'top'.</p>
+    <p class='top'>My class value is just 'top'.</p>
+    <hr>
+    <h3>CSS [attribute$='value'] Selector:</h3>
+    <p>The [attribute$='value'] selector is used to select elements which values end with a specified value.</p>
+    <p>The below's an example of selecting all elements with a class attribute ending with "test". One thing to note is the value doesn't need to be one word.</p>
+    <p class='bigtest'>My class ends with test.</p>
+    <p class='t_est'>My class doesn't end with test.</p>
+    <p class='test'>My class is test.</p>
+    <hr/>
+    <h3>CSS [attribute*='value'] Selector:</h3>
+    <p>The [attribute*='value'] selector is used to select elements whose attribute value contains a specific value.</p>
+    <p>Below's an example of selecting elements with a class containing a value that contains "te". One thing to note, the value doesn't need to be a whole word.</p>
+    <p class='testone'>Test One.</p>
+    <p class='tsttwo'>Test Two.</p>
+    <p class='testthree'>Test Three.</p>
+    <p class='testfour'>Test Four.</p>
+    <hr/>
+    <h3>Styling Forms:</h3>
+    <p>Things such as forms can be styled by selecting inputs.</p>
+    <form name="input" action="" method="get">
+        Firstname:<input type="text" name="Name" value="First" size="20">
+        Lastname:<input type="text" name="Name" value="Last" size="20">
+    </form>
+    <hr/>
+</body>
+</html>

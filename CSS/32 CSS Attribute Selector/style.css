@@ -1,0 +1,51 @@
+body {
+    background-color: #aaaaaa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #222222;
+    margin: 10px 0;
+}
+
+a[target] {
+    background-color: #FFFF00;
+}
+
+a[target='_blank'] {
+    background-color: #9999ff;
+    color: #000000;
+    text-decoration: none;
+}
+
+div[title~='testing'] {
+    border: 2px solid #000000;
+    background-color: #999999;
+}
+
+[class|='top'] {
+    background: yellow;
+}
+
+[class^='top'] {
+    background-color: #5555ff;
+    color: #ffffff;
+}
+
+[class$='test'] {
+    background-color: #999999;
+}
+
+[class*="te"] {
+    background: yellow;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
